@@ -1,0 +1,162 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* Common Section */
+body{
+    font-family: 'Poppins',
+    sans-serif;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 21px;
+}
+
+.container {
+
+    margin-top: 21px;
+
+}
+/* hearder section */
+header{
+    margin-top: 87px ;
+    width: 80%;
+}
+.site-title{
+
+}
+/* nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5em;
+    margin-right: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+} */
+/* Banner-Section */
+
+.banner{
+    width: 80%;
+    margin-top: 21px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-bottom: 100px;
+}
+h1{
+    width: 582px;
+    height: 133px;
+    font-size: 52px;
+    font-weight: bold;
+    line-height: 70px;
+}
+.banner-pic{
+    border: 1px solid black;
+    
+}
+.banner-pic:hover .main-pic{
+    transform: scale(1.2) rotate(360deg);
+    transition: transform 3s ease-in-out 1s;
+}
+.main-pic{
+    
+    width: 440px;
+    height: 414px;
+    border: 1px solid lightblue;
+    border-radius: 50px;
+    position: relative;
+    left: 50px;
+
+}
+.book-btn{
+    margin-top: 30px;
+}
+.button {
+    text-decoration: none;
+    background-color: #E02C6D;
+    color: white;
+    font-weight: bold;
+    padding: 15px 45px;
+    border-radius: 25px;
+    margin-top: 5px;
+}
+/* comapines logo */
+
+.companies-logos{
+    padding: 15px;
+    align-items: center;
+    margin: 0 165px 0 165px ;
+    width: 1110px;
+    height: 110px;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    
+}
+
+/* collections */
+.collection-title{
+
+    text-align: center;
+}
+.collections {
+    
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap:30px;
+    margin-bottom: 100px;
+    grid-column-gap: 30px;
+    
+}
+
+.star{
+    position: relative;;
+    height: 32px;
+}
+.item-details{
+    width: 196px;
+    height: 61px;
+    font-size: 14px;
+    line-height: 20px
+}
+.collection{
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}
+.collection-pic{
+    padding: 10px;
+    border-radius: 10px;
+}
+.collection-details{
+    padding: 10px;
+}
+.fa-star {
+    font-size: 12px;
+}
+
+.fa-star.filled {
+    color: #FFC014;
+    ;
+}
+
+.fa-star.empty {
+    color: #AEAEAE;
+
+}
+/* footer */
+footer {
+    background-color:rgb(1, 1, 29) ;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    
+
+}
