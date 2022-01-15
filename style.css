@@ -26,14 +26,11 @@ header {
     width: 80%;
 }
 
-.site-title {
+.site-title h2{
 
-    position: absolute;
-    left: 8.33%;
-    right: 74.79%;
-    top: 2.63%;
-    bottom: 95.79%;
-}
+   position: relative;
+   left: 10%;
+} 
 /* Banner Section */
     .full-cover{
         width: 80%;
@@ -62,7 +59,6 @@ header {
         border-radius: 50px;
         position: relative;
         left: 50px;
-
     }
 
     .book-btn {
@@ -204,40 +200,101 @@ footer {
 
 
 /* tablet devices */
-@media only screen and (min-width:688px) and (max-width:992px) {
+@media only screen and (min-width:680px) and (max-width:992px) {
     .container {
         width: 98%;
         margin: auto;
+
+    }
+    .site-title h2 {
+        position: relative;
+        left: 50%;
+    }
+    .full-cover {
+        width: 90%;
+        margin-top: 21px;
+        margin-bottom: 100px;
 
     }
     .banner {
         grid-template-columns: repeat(1, 1fr);
         
     }
+    .banner-details {
+        margin-bottom: 40px;
+
+    }
+    .main-pic {
+
+        width: 300px;
+        height: 400px;
+        border: 1px solid lightblue;
+        border-radius: 50px;
+        position: relative;
+        left: 8%;
+
+    }
+    .banner-pic img {
+        width: 80%;
+    }
+
     .companies-logos {
+        padding: 15px;
+        margin: 0 10% 30px 10%;
+        width: 80%;
+        height: 70px;
+        display: grid;
         grid-template-columns: repeat(4, 1fr);
         border-top: 1px solid gray;
         border-bottom: 1px solid gray;
 
     }
-
+  
     .collections {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-column-gap: 30px;
+        margin-left: 75px;
         
     }
-
+    .collection{
+        width: 329px;
+        height: 520px;
+    }
+    .smore-btn{
+            position: relative;
+            left: 55%;
+            width: 196px;
+            height: 44px;
+            text-decoration: none;
+            color: #E02C6D;
+        
+    }
     .bonus-part {
+        margin-top: 20px;
         grid-template-columns: repeat(1, 1fr);
     }
+    .bonus-btn{
+        margin: 20px 0px;
+    }
+     footer {
+         width: 100%;
+         background-color: rgb(1, 1, 29);
+         color: white;
+         text-align: center;
+         padding: 10px;
+     }
 
 }
 /* Mobile devices */
-@media only screen and (max-width:640px) {
+@media only screen and (max-width:680px) {
     .container {
         width: 98%;
         margin: auto;
+    }
+    .site-title h2 {
+        position: relative;
+        left: 50%;
     }
     .full-cover {
         width: 90%;
@@ -260,23 +317,58 @@ footer {
         padding: 10px;
     }
     .banner-details{
-        margin-bottom: 20px;
+        margin-bottom: 30px;
 
     }
+    .main-pic{
+        width: 257px;
+        height: 257px;
+    }
+    .banner-pic img{
+        width: 70%;
+    }
     .companies-logos {
-       grid-template-columns: repeat(4, 1fr);
-        border-top: 1px solid gray;
-        border-bottom: 1px solid gray;
+        padding: 15px;
+        align-items: center;
+        margin: 0 5% 0 10%;
+        width: 400px;
+        height: 100px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        border: none;
 
     }
      .collections {
          display: grid;
          grid-template-columns: repeat(1, 1fr);
          grid-column-gap: 30px;
-         
+         margin-left: 25%;
+     }
+     .collection {
+         width: 329px;
+         height: 520px;
+     }
+     .smore-btn {
+         position: relative;
+         left: 50%;
+         width: 196px;
+         height: 44px;
+         text-decoration: none;
+         color: #E02C6D;
+
      }
      .bonus-part {
          grid-template-columns: repeat(1, 1fr);
+     }
+     .bonus-btn {
+         margin: 20px 0px;
+     }
+     footer {
+         width: 100%;
+         background-color: rgb(1, 1, 29);
+         color: white;
+         text-align: center;
+         padding: 10px;
      }
 
 }
