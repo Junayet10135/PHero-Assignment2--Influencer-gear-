@@ -1,35 +1,7 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
-/* Responsive Part */
-    /* Mobile devices */
-    @media only screen and (max-width:688px) {
-        .container{
-            width: 100%;
-        }
-        .banner-name{
-            text-align: center;
-        }
-        .banner{
-            grid-template-columns: repeat(2,1fr);
-            background-color: blue;
-        }
-        
-    }
 
-    /* tablet devices */
-    @media only screen and (min-width:688px) and (max-width:992px) {
-        .container{
-            width: 100%;
-
-        }
-        .collections{
-            grid-template-columns: repeat(1,1fr);
-        }
-        .collection{
-            flex-direction: column;
-        }
-    }
 /* Common Section */
 body{
     font-family: 'Poppins',
@@ -45,9 +17,24 @@ main {
 
 .container {
     margin-bottom: 100px;
+    
 
 }
 /* hearder section */
+header {
+    margin-top: 87px;
+    width: 80%;
+}
+
+.site-title {
+
+    position: absolute;
+    left: 8.33%;
+    right: 74.79%;
+    top: 2.63%;
+    bottom: 95.79%;
+}
+/* Banner Section */
     .full-cover{
         width: 80%;
         margin-top: 21px;
@@ -212,4 +199,84 @@ footer {
 .social-icon{
     font-size: 25px;
     margin-left: 15px;
+}
+/* Responsive Part */
+
+
+/* tablet devices */
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .container {
+        width: 98%;
+        margin: auto;
+
+    }
+    .banner {
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+    .companies-logos {
+        grid-template-columns: repeat(4, 1fr);
+        border-top: 1px solid gray;
+        border-bottom: 1px solid gray;
+
+    }
+
+    .collections {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 30px;
+        
+    }
+
+    .bonus-part {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+/* Mobile devices */
+@media only screen and (max-width:640px) {
+    .container {
+        width: 98%;
+        margin: auto;
+    }
+    .full-cover {
+        width: 90%;
+        margin-top: 21px;
+        margin-bottom: 100px;
+        
+    }
+    .banner-name {
+        text-align: center;
+    }
+    h1 {
+        width: 404px;
+        height: 78px;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 42px;
+    }
+    .banner {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 10px;
+    }
+    .banner-details{
+        margin-bottom: 20px;
+
+    }
+    .companies-logos {
+       grid-template-columns: repeat(4, 1fr);
+        border-top: 1px solid gray;
+        border-bottom: 1px solid gray;
+
+    }
+     .collections {
+         display: grid;
+         grid-template-columns: repeat(1, 1fr);
+         grid-column-gap: 30px;
+         
+     }
+     .bonus-part {
+         grid-template-columns: repeat(1, 1fr);
+     }
+
 }
